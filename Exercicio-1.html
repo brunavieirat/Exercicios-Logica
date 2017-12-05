@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+
+
+<body>
+
+    <script>
+    
+
+    /* Exercicio - 21 */
+    // // var num = 0;
+    // // while (num % 2 != 0){
+
+    // //     num = parseInt(prompt("Digite um número par", ""));
+
+    // //     if (num %2 ==0){
+
+    // //         alert("Você digitou o número par: " + num);
+
+            
+    // //     }
+    // }
+    
+
+        // var num = 0;
+        // var soma = 0;
+        // // var i = 0;
+
+        // // num = parseInt(prompt("Digite o " + i + "número", "" ));
+
+
+        // for (var i = 1; i <= 15; i++){
+
+        //     num = parseInt(prompt("Digite o " + i + " número", "" ));
+        //     console.log(num);
+            
+
+        //     soma = soma + num;
+
+
+        // }
+
+        // console.log(soma);
+
+            /* Exercicio 22 */
+
+            // var num = 0;
+
+            // for (var num=0; num <= 50; num++){
+
+            //     if (num % 2 != 0){
+
+            //         console.log(num);
+            //     }
+
+            // }
+
+
+            /* Exercicio 23 */
+    
+                // var num = 0;
+                // // var c = 0;
+
+                // num = parseInt(prompt("Escolha o número:", ""));
+
+
+                // for (var c=0; c<=10; c++){
+
+                //     result = num * c;
+
+                //     console.log(c + " X " + num + " = " + result);
+
+                // }
+
+                // var num = 0;
+                // // var c = 0;
+
+                // num = parseInt(prompt("Escolha o número:", ""));
+
+
+
+                /* Exercicio 24 */
+                    /*
+                    var result = 0;
+
+                for (var c=1; c<=10; c++){
+
+                    for(var n=0; n<=10; n++){
+
+                    result = n * c;
+
+                    console.log(c + " X " + n + " = " + result);
+
+                    
+                    }
+                    console.log("----------------------------------------------");
+                }
+                */
+
+
+                /* Exercício 25 */
+
+                var qtdF = 0;
+                var qtdM = 0;
+                var qtdS = 0;
+                var qtdN = 0;
+                var teste = 0;
+                var percHomens = 0;
+
+
+                for (c=1; c<=10; c++)
+                {
+                var sexo = prompt("Informe seu sexo: ", "");
+
+                    if(sexo == "Feminino" || sexo == 'F'){
+                        qtdF++;
+                        
+                    }   
+
+                    else if (sexo == "Masculino" || sexo =='M'){
+
+                        qtdM++;
+
+                    }
+
+                    else {
+
+                        prompt("Informe Feminino ou Masculino!!!");
+                    }
+
+
+
+                var resp = prompt("Você gostou do Produto? ", "");
+
+                    if (resp == "Sim" || resp == "S"){
+
+                        qtdS++;
+                    }
+
+                    else if (resp ==  "Não" || resp == "N"){
+
+                        qtdN++;
+
+                    }
+
+                    else{
+                        prompt("Digite Sim/S ou Não/N");
+                    }
+
+                    // if (sexo == "M" || sexo == "Masculino" && resp == "N" || resp == "Não"){}
+                    
+                    if (resp == "N" && sexo == "M"){
+
+                        teste++;
+                    }
+                    console.log(teste);
+
+                // var percHomens = prompt()
+                    
+                }
+                //  console.log(qtdF + " Mulheres " + qtdM + " Homens " + qtdN + " Não " + qtdS + " Sim" );
+                console.log(qtdS + " Responderam SIM!");
+
+                 console.log(qtdN + " Responderam NÃO!");
+
+                 console.log(qtdF + " Mulheres responderam SIM!");
+
+                percHomens = (teste*100)/qtdM;
+                console.log(" A porcentagem de homens foi: " + percHomens + "%");
+                
+
+
+                /* EXERCICIO 26 */
+
+
+                // var totalM = 0;
+                // var totalH = 0;
+                // var mediaH = 0;
+                // var mediaM = 0;
+                // var somaIdadeM = 0;
+                // var somaIdadeH = 0;        
+               
+               
+                // for (var i=1; i<=10; i++){
+
+
+                //     var idade = parseInt(prompt("Informe sua idade: "));
+                //     // var peso = parseFloat(prompt("Informe seu peso"));
+                //     var sexo = prompt("Informe seu Sexo (M ou F): ");
+
+                //     if (sexo == "M"){
+
+                //         totalH++;
+                //         somaIdadeH = somaIdadeH + idade;
+
+
+                //     }
+
+                //     if (sexo == "F"){
+                //         totalM++;
+                //         somaIdadeM = somaIdadeM + idade;
+
+                //     }
+
+                // }
+
+                // mediaH = somaIdadeH/totalH;
+                // mediaM = somaIdadeM/totalM;
+
+                // document.write("Total de Homens: " + totalH + "<br>");
+                // document.write("Total de Mulheres: " + totalM + "<br>");
+                // document.write("Média de idade dos Homens: " + mediaH + "<br>");
+                // document.write("Média de idade das Mulheres: " + mediaM + "<br>");
+
+
+
+
+    
+    </script>
+
+
+
+    
+</body>
+</html>
