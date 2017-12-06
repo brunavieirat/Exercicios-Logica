@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+     //Exercicio 25
+        var sim = 0;
+        var nao = 0;
+        var qtdMS = 0;
+        var qtdHN = 0;
+        var hom = 0;
+        var percH = 0;
+
+        for (var cont = 1; cont <= 4; cont++){
+
+        var sexo = prompt("Qual seu sexo? (F/M)");
+        
+        var resp = prompt("Você gostou do produto? (S/N)");
+
+        if (resp == 'S'){
+
+            sim++;
+
+            if (sexo == 'F'){
+                qtdMS++;
+            }
+        }
+        else if (resp == 'N'){
+            nao++;
+
+            if (sexo == 'M'){
+                qtdHN++;
+            }
+        }    
+        if (sexo == 'M'){
+
+            hom++;
+        }
+        }
+
+        percH = (qtdHN*100)/hom;
+
+        document.write ("Mulher sim: " + qtdMS + "<br> qtd nao: " + nao + "<br> qtd sim: " + sim + "<br> Percentual de homens nao: " + percH +"%") ;
+        </script>
+    
+</body>
+</html>
