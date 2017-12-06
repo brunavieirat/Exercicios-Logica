@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    function somar (a, b){
+        return a+b;
+    }
+    
+    function multiplicar (a,b){
+        return a*b;
+    }
+
+    function dividir (a,b){
+        return a/b;
+    }
+
+    function subtrair (a,b){
+        return a-b;
+    }
+
+    var a = Number(prompt("Digite o primeiro numero: "));
+    var b = Number(prompt("Digite o segundo numero: "));
+    var operacao = 0;
+
+   
+        // operacao = parseFloat(prompt("Digite 1 para somar, 2 para multiplicar, 3 para dividir, 4 para subtrair"));
+        operacao = (prompt("Digite  somar, multiplicar,  dividir ou subtrair"));
+
+    
+
+    switch (operacao){
+        // case 1:
+        //     document.write(" Resultado: " + somar(a,b));
+        // break;
+
+
+        // case 2:
+        //     document.write("Resultado: " + multiplicar(a,b));
+        // break;
+
+        // case 3:
+        //     document.write(" Resultado: " + dividir(a,b));
+        // break;
+
+        // case 4:
+        //     document.write(" Resultado: " + subtrair(a,b));
+        // break;   
+        
+        case 'somar':
+            document.write(" Resultado: " + somar(a,b));
+        break;
+
+
+        case 'multiplicar':
+            document.write("Resultado: " + multiplicar(a,b));
+        break;
+
+        case 'dividir':
+            document.write(" Resultado: " + dividir(a,b));
+        break;
+
+        case 'subtrair':
+            document.write(" Resultado: " + subtrair(a,b));
+        break;   
+        
+
+
+
+    }
+    
+    </script>
+    
+
+</body>
+</html>
